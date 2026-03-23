@@ -36,7 +36,7 @@ class ListNode {
 //        return head;
 //    }
 
-     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
          ListNode dummy = new ListNode(0);
          ListNode current = dummy;
          int carry = 0;
