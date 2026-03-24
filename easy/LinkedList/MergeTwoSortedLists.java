@@ -1,14 +1,7 @@
-package easy;
+package easy.LinkedList;
 
 //You are given the heads of two sorted linked lists lit1 and list2.
 //Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.s
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
 
 class MergeTwoSortedLists {
 
@@ -36,14 +29,8 @@ class MergeTwoSortedLists {
 //        list1 = [1,2,4], list2 = [1,3,4]
         ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
         ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
-        printList(mergeTwoLists(list1, list2));
+        ListNodeUtils.printList(mergeTwoLists(list1, list2));
     }
 
-    public static void printList(ListNode head) {
-        while (head != null) {
-            System.out.print(head.val + " -> ");
-            head = head.next;
-        }
-    }
 
 }
